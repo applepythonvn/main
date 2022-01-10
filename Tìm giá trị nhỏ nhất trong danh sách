@@ -1,0 +1,8 @@
+def minsnn(list):
+    for i in range(0,len(list)):
+        sosanh = list[i] > list[i-1]
+        if sosanh == min(list):
+            print(min(list))
+            break
+ds = list(map(int, input().split()))
+print(minsnn(ds))
