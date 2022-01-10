@@ -1,0 +1,26 @@
+a=int(input("số thứ nhất: "))
+b=int(input("số thứ hai: "))
+c=int(input("số thứ ba: "))
+print("3 số đã nhập vào khi chưa sắp xếp: ", a, b, c)
+
+if a>b:
+    a,b=b,a
+if a>c:
+    a,c=c,a
+if b>c:
+    b,c=c,b
+print("3 số đã nhập vào khi đã sắp xếp(theo thứ tự từ bé đến lớn): ", a, b, c)
+
+if a>b:
+    a,b=b,a
+if b>a:
+    b,a=a,b
+if a>c:
+    a,c=c,a
+if c>a:
+    c,a=a,c
+if b>c:
+    b,c=c,b
+if c>b:
+    c,b=b,c
+print("3 số đã nhập vào khi đã sắp xếp(theo thứ tự từ lớn đến bé): ", a, b, c)
